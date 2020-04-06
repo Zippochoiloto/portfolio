@@ -16,7 +16,7 @@
   <!-- initialize the SDK after all desired features are loaded -->
   <script defer src="/__/firebase/init.js"></script>
   <link rel="stylesheet" href="/public/style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 
@@ -37,10 +37,10 @@
           <a href="#about" class="nav-link">About</a>
         </li>
         <li>
-          <a href="@services" class="nav-link">Services</a>
+          <a href="#services" class="nav-link">Services</a>
         </li>
         <li>
-          <a href="@portfolio" class="nav-link">Portfolio</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
         </li>
         <li>
           <a href="#experience" class="nav-link">Experience</a>
@@ -50,83 +50,81 @@
         </li>
       </ul>
     </nav>
-    <div class="landing-text">
-      <h1>Rosie Ellis</h1>
-      <h6>UI | UX Designer and Web Developer</h6>
+    <div class="landing-text" id="landing-text">
+      <h1>Luong The Anh</h1>
+      <h6>Front-End Web Developer</h6>
     </div>
   </header>
 
   <section class="about" id="about">
     <div class="container">
-      <div class="profile-img">
+      <div class="profile-img" data-aos="fade-right">
         <img src="./image/profile-image.jpg" />
       </div>
 
       <div class="about-details">
-        <div class="about-heading">
+        <div class="about-heading" data-aos="fade-left">
           <h1>About</h1>
           <h6>Myself</h6>
         </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, a magnam.
-          Cumque eveniet nostrum dolor, ex ipsum dolorem facere aliquid sint maiores incidunt
-          eaque doloremque quae error similique, tempore aspernatur.
+        <p data-aos="fade-left">I am a willing to learn person. I am attractive to challenges and have a great
+          interested in coding
         </p>
+        <div class="social-media" data-aos="fade-left">
+          <ul class="nav-list">
+            <li>
+              <a href="https://www.facebook.com/anh.luong.92" class="icon-link">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Zippochoiloto" class="icon-link">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/anh-luong-509905118/" class="icon-link">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="social-media">
-      <ul class="nav-list">
-        <li>
-          <a href="#" class="icon-link">
-            <i class="fab fa-facebook-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="icon-link">
-            <i class="fab fa-twitter-square"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="icon-link">
-            <i class="fab fa-dribbble-square"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
+
 
   </section>
 
   <section class="services" id="services">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-down">
         <h1>Services</h1>
         <h6>What I can do for you</h6>
       </div>
-      <div class="my-skills">
+      <div class="my-skills" data-aos="flip-up">
         <div class="skill">
           <div class="icon-container">
             <i class="fas fa-layer-group"></i>
           </div>
-          <h1>Web Design</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <h1>Team-work person</h1>
+          <p>As a team member, I always find way to improve team connection as well as finish task as requested
           </p>
         </div>
         <div class="skill">
           <div class="icon-container">
-            <i class="fas fa-code-group"></i>
+            <i class="fas fa-code"></i>
           </div>
           <h1>Web Development</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <p>I am well understand with HTML,CSS, Javascript, ES6, Angular
           </p>
         </div>
         <div class="skill">
           <div class="icon-container">
-            <i class="fas fa-chart-group"></i>
+            <i class="fas fa-chart-bar"></i>
           </div>
-          <h1>Product Strategy</h1>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          <h1>High Responsibility</h1>
+          <p>
+            Every task i received, I always try 150 percent to complete.
           </p>
         </div>
       </div>
@@ -135,66 +133,67 @@
 
   <section class="portfolio" id="portfolio">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="flip-up">
         <h1>Portfolio</h1>
         <h6>View some of my recent work</h6>
       </div>
     </div>
+    <div class="portfolio-description  has-margin-right" data-aos="fade-right">
+      <h6>Telecom Enginner</h6>
+      <h1>Ericsson</h1>
+      <p>As a Telecom Enginner, I have joined several 4G projects: optimizing freequency, maitaining tranmission
+        network. Also I have arrived Erirsson Myanmar to support team with Excel macro to faster daily job
+      </p>
+
+    </div>
     <div class="portfolio-item">
-      <img src="/public/image/profile-image.jpg" alt="">
+      <div class="portfolio-img has-margin-right" data-aos="fade-up">
+        <img src="/public/image/trung-tam-iot-innovation-hub_5_1.jpg" alt="">
+      </div>
     </div>
 
-    <div class="portfolio-description">
+    <div class="portfolio-description  has-margin-right" data-aos="fade-right">
       <h6>Web Development</h6>
-      <h1>Blog Website</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <h1>Vin ID</h1>
+      <p>Working on Angular Project. Getting more knowledge about Augular,Javascript, HTML, CSS and ES6.
+        Co-operate with team using GitLab, Jira
       </p>
-      <a href="#" class="cta">View Details</a>
+
     </div>
 
     <div class="portfolio-item">
-      <img src="/public/image/profile-image.jpg" alt="">
+      <div class="portfolio-img has-margin-right" data-aos="fade-up">
+        <img src="/public/image/JScode.jpg" alt="">
+      </div>
     </div>
 
-    <div class="portfolio-description">
-      <h6>Web Design</h6>
-      <h1>Product Layout</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      </p>
-      <a href="#" class="cta">View Details</a>
-    </div>
 
 
   </section>
 
   <section class="experience" id="experience">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-up">
         <h1>Work Experience</h1>
         <h6>Past and current job</h6>
       </div>
     </div>
 
-    <div class="timeline">
+    <div class="timeline" data-aos="fade-up">
       <ul>
-        <li class="date" data-date="2011 - Present">
-          <h1>Google</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo possimus placeat enim iste temporibus
-            obcaecati adipisci atque autem, expedita et nobis minus sed, dicta animi. Eius obcaecati ullam repudiandae.
+        <li class="date" data-date="Nov-2019 - Present">
+          <h1>Vin ID</h1>
+          <p>Front-End Web Developer
           </p>
         </li>
-        <li class="date" data-date="2008 - 2011">
-          <h1>Facebook</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo possimus placeat enim iste temporibus
-            obcaecati adipisci atque autem, expedita et nobis minus sed, dicta animi. Eius obcaecati ullam repudiandae.
+        <li class="date" data-date="Jul-2017 - Oct-2019">
+          <h1>Erricson</h1>
+          <p>Telecom & Tranmission Enginner
           </p>
         </li>
-        <li class="date" data-date="2001 - 2008">
-          <h1>Microsoft</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quo possimus placeat enim iste temporibus
-            obcaecati adipisci atque autem, expedita et nobis minus sed, dicta animi. Eius obcaecati ullam repudiandae.
+        <li class="date" data-date="Jan-2017 - Jun-2017">
+          <h1>Viet Vuong Telecom</h1>
+          <p>Telecom Intern
           </p>
         </li>
       </ul>
@@ -203,11 +202,11 @@
 
   <section class="contact" id="contact">
     <div class="container">
-      <div class="section-heading">
+      <div class="section-heading" data-aos="fade-up">
         <h1>Contact</h1>
         <h6>Let's work together</h6>
       </div>
-      <form action="">
+      <form action="" data-aos="fade-up">
         <label for="name">Name:</label>
         <input type="text" id='name' name='name' placeholder="Enter your name ..." required>
         <label for="email">Email:</label>
@@ -227,13 +226,13 @@
   </section>
 
   <footer class="copyright">
-    <div class="up" id="up">
+    <div class="up" id="up" href="#landing-text">
       <i class="fas fa-chevron-up"></i>
-      <p>&copy: 2019 Rosie Ellis</p>
     </div>
+    <p>&copy: 2019 Luong The Anh</p>
   </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="main.js"></script>
 </body>
 
